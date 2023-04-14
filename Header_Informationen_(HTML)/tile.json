@@ -1,0 +1,9 @@
+{
+    "title": "Header Informationen (HTML)",
+    "folder": "Header_Informationen_(HTML)",
+    "description": "Unter HTML head liegen die Metadaten (title, meta und base), die Informationen zur Seite liefern, die Darstellung steuern und über die Beziehungen zu anderen Dateien (style, link, script) und HTML-Seiten informieren. Was im Head-Tag steht, wird nicht auf der Webseite angezeigt.",
+    "tags": ["Head", "HTML", "Information"],
+    "author": "Nathalie Missling",
+    "github": "https://github.com/nathaliexlea/Header-Informationen-HTML-.git"
+    
+    }

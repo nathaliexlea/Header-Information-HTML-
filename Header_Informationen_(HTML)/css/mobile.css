@@ -1,0 +1,100 @@
+@media screen and (max-width: 768px){
+
+    #wrapper{
+    
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 200px 400px;
+        grid-template-areas: 
+        "bild"
+        "content1"
+        "content2"
+        ;
+    }
+    .header{
+        display: none;
+    }
+    
+    .footer{
+        display: none;
+    }
+    
+    .pic{
+        grid-area: bild;
+        width: 100%;
+        position: absolute;
+        top:0;
+    
+    }
+    
+    .textbox1 {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 20px;
+        display: flex;
+        justify-content: left;
+        padding-bottom: 0;
+        grid-area: content1;
+    }
+    
+    .content1 {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 13pt;
+        position: absolute;
+        margin-top: 20px;
+        padding-right: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-bottom: 0;
+        top:500px;
+    }
+    
+    .textbox1 h2 {
+        position: absolute;
+        margin-top: 0;
+        margin-left: 25px;
+        grid-area: content1;
+        top: 400px;
+    }
+    
+    h3{
+        display: none;
+    }
+    
+    
+    
+    
+    .textbox2 {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 20px;
+        display: flex;
+        padding-bottom: 0;
+    
+        grid-area: content2;
+    }
+    
+    
+    .content2 {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 13pt;
+        position: absolute;
+        padding-right: 25px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 80px;
+        margin-bottom: 0;
+        top:950px;
+    }
+    
+    .textbox2 h2 {
+        position: absolute;
+        margin-top: 0;
+        margin-right: 100px;
+        margin-left: 25px;
+        top: 900px;
+    }
+
+
+    
+    }

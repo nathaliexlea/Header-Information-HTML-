@@ -1,0 +1,154 @@
+body {
+    margin: 0;
+    background-color: white;
+
+}
+
+
+.grid-container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 150px 150px 150px 250px 600px 140px ;
+    grid-template-areas:
+        "header header header"
+        "bild1 content1 sidebar"
+        "bild1 content1 sidebar"
+        "h3 h3 h3"
+        "bild2 content2 content2"
+        "footer footer footer"
+    ;
+row-gap: 50px;
+
+
+}
+
+
+.header {
+    color: white;
+    margin-top: 0px;
+    background-color: rgb(63, 97, 74);
+    text-align: left;
+    display: flex;
+    padding-left: 25px;
+    padding-top: 15px;
+    padding-right: 25px;
+    justify-content: space-between;
+
+
+    grid-area: header;
+
+}
+
+h1 {
+    font-size: 35px;
+    grid-area: sidebar;
+    font-family: sans-serif;
+}
+
+nav ul {
+    font-family: 'IBM Plex Mono', monospace;
+    padding-top: 50px;
+    list-style: none;
+
+
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+
+.textbox1 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-column: 2 / span 2;
+    grid-row: 2/ span 3;
+}
+
+
+.content1 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    margin-top: 120px;
+    padding-right: 25px;
+    grid-area: sidebar;
+    margin-left: 400px;
+    margin-right: 25px;
+    margin-bottom: 0;
+}
+
+.textbox1 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 400px;
+    grid-area: sidebar;
+}
+
+
+
+h3 {
+    font-size: 50px;
+    grid-area: h3;
+    text-align: center;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+
+
+
+
+.textbox2 {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    display: flex;
+    padding-bottom: 0;
+
+    grid-area: content2;
+}
+
+
+.content2 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 13pt;
+    position: absolute;
+    padding-right: 25px;
+    margin-right: 25px;
+    margin-left: 400px;
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
+.textbox2 h2 {
+    position: absolute;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-left: 400px;
+}
+
+
+.footer {
+    background-color: rgb(63, 97, 74);
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    grid-area: footer;
+}
